@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eg.typicaldesign.moaheb.views.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolabar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/applicationColor"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="50dp"
+                android:src="@drawable/logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_below="@+id/toolabar_holder"
+        android:background="@drawable/msalah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:weightSum="1"
+            android:background="@drawable/round_rect2"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/sponsor"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight=".5"
+                android:padding="10dp"
+                android:text="Register for sponsor"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/player"
+                android:text="Register for player"
+                android:textSize="17sp"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

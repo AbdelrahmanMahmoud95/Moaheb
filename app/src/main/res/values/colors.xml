@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="applicationColor">#530707</color>
+    <color name="alertDialogColor">#c7c4c4</color>
+    <color name="colorPrimary">#530707</color>
+    <color name="colorPrimaryDark">#530707</color>
+    <color name="colorAccent">#530707</color>
+</resources>

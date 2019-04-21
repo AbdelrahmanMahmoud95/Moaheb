@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/age" android:title="السن "></item>
+    <item android:id="@+id/most_viewed" android:title="اعلى مشاهدة"></item>
+    <item android:id="@+id/most_reviewed" android:title="اعلى تقيم"></item>
+
+</menu>

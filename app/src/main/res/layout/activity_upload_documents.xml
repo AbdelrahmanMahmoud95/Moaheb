@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eg.typicaldesign.moaheb.views.UploadDocumentsActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolabar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/applicationColor"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="50dp"
+                android:src="@drawable/logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolabar_holder"
+        android:background="@drawable/msalah"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_weight=".89">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/round_rect4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@drawable/round_radius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="قم بارسال الصور التي تثبت هويتك مثل صورة البطاقة-شهادة الميلاد-كارنية-صور لبطولات."
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_galary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/add_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="7dp"
+                        android:text="اضافة مستند من المعرض "
+                        android:textColor="@color/applicationColor"
+                        android:textSize="20sp" />
+                    <ImageView
+                        android:id="@+id/add_image"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/add_image" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/add_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="7dp"
+                        android:text="اضافة مستند من الكاميرا "
+                        android:textColor="@color/applicationColor"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/camera"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/camera_image" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/new_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/contact_player"
+                    android:hint="اسم المستند"
+                    android:minHeight="40dp"
+                    android:padding="4dp"
+                    android:textColor="@color/applicationColor"
+                    android:textColorHint="#4b4a4a" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/add_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/add_image_btn"
+                        android:gravity="center"
+                        android:text="اضافة المستند "
+                        android:textColor="@color/applicationColor"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/my_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/positive_alert_dialog"
+                        android:gravity="center"
+                        android:text="مستنداتي السابقة"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8408797241053494/7420682495" />
+
+        <include
+            android:id="@+id/navigation"
+            layout="@layout/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_weight=".11" />
+    </LinearLayout>
+</RelativeLayout>

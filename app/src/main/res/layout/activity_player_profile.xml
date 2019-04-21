@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eg.typicaldesign.moaheb.views.PlayerProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolabar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/applicationColor"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="50dp"
+                android:src="@drawable/logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolabar_holder"
+        android:background="@drawable/msalah">
+
+
+        <LinearLayout
+            android:id="@+id/contentpain"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/user_data"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text="بيانات الشخصية"
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/user_data" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_images"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text=" صوري "
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/user_photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text="فيديوهاتي "
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/user_video" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_docs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text="المستندات "
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/docs" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/user_sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text=" بيانات الرياضة "
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/user_sport" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/user_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text=" بيانات السكن "
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/home1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/guardian"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text=" بيانات ولي الامر "
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/guardian" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/log_out"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|right"
+                    android:text=" تسجيل الخروج "
+                    android:textColor="@color/applicationColor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/logout" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/navigation"
+            layout="@layout/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom" />
+    </RelativeLayout>
+</RelativeLayout>

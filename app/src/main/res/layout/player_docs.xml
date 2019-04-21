@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp" android:layout_height="185dp">
+
+    <ImageView
+        android:id="@+id/player_docs"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_margin="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/round_rect7"
+        android:src="@drawable/msalah" />
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/close" />
+
+    <TextView
+        android:id="@+id/name_docs"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/player_docs"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="hello world"
+        android:textColor="@color/applicationColor"
+        android:textSize="16dp" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp" android:layout_height="130dp">
+<com.google.android.youtube.player.YouTubeThumbnailView
+    android:id="@+id/player_videos"
+    android:layout_margin="3dp"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    />
+    <ImageView
+        android:id="@+id/play_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/youtube_image" />
+
+
+</RelativeLayout>

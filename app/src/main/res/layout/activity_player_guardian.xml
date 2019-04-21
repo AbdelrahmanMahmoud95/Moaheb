@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eg.typicaldesign.moaheb.views.PlayerGuardianActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolabar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/applicationColor"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="50dp"
+                android:src="@drawable/logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolabar_holder"
+        android:background="@drawable/msalah"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/contentpain"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/parent_name"
+                    android:layout_width="286dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center"
+                    android:hint="اسم ولي الامر"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/user" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/parent_number"
+                    android:layout_width="286dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center"
+                    android:hint="رقم ولي الامر"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/smartphone" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/applicationColor"
+                android:text="تسجيل"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/navigation"
+            layout="@layout/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom" />
+    </RelativeLayout>
+</RelativeLayout>

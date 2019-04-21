@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/msalah"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/contentpain"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linear_sport"
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:src="@drawable/arrow_down" />
+
+                <TextView
+                    android:id="@+id/sport_name"
+                    android:layout_width="297dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:hint="اختر اللعبة"
+                    android:padding="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_position"
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:src="@drawable/arrow_down" />
+
+                <TextView
+                    android:id="@+id/position_name"
+                    android:layout_width="297dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:hint="اختر المركز"
+                    android:padding="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_age"
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/age_to"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|right"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textIsSelectable="false"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:hint=" الي"
+                    android:padding="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/age_from"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|right"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textIsSelectable="false"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:hint="السن من"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_Governorate"
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:background="@drawable/round_rect"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:src="@drawable/arrow_down" />
+
+                <TextView
+                    android:id="@+id/select_Governorate"
+                    android:layout_width="297dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:hint="اختر المحافظة"
+                    android:padding="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#403d3d"
+                    android:textColorHint="#403d3d"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/join"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:padding="8dp"
+                android:text="مشترك في نادي"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/has_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:padding="8dp"
+                android:text="لديه فيديو"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/has_photos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:padding="8dp"
+                android:text="لديه صور"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/has_champion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:padding="8dp"
+                android:text="حاصل على بطولات"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/single"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_rect"
+                android:checked="true"
+                android:padding="8dp"
+                android:text="الحالة الاجتماعية"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/applicationColor"
+                android:text="بحث"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/desc"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:src="@drawable/down_arrow" />
+
+        <ImageView
+            android:id="@+id/asc"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/up_arrow" />
+
+        <Button
+            android:id="@+id/sort"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/round_rect2"
+            android:text="اختر"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:text="يمكن الترتيب على حسب"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:id="@+id/scrol_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/res_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrol_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/res_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrol_sort_asc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/res_sort_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrol_sort_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/res_sort_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+</LinearLayout>
